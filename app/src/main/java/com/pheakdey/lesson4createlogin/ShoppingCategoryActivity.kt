@@ -31,9 +31,13 @@ class ShoppingCategoryActivity : AppCompatActivity() {
         }
         img_cloting.setOnClickListener {
             Toast.makeText(this, "Hi there! This is Cloting category", Toast.LENGTH_SHORT).show()
+            var intent = Intent(this, ClothingActivity::class.java)
+            startActivity(intent)
         }
         img_electroic.setOnClickListener {
             Toast.makeText(this, "Hi there! This is Electroic category", Toast.LENGTH_SHORT).show()
+            var intent = Intent(this, ElectronicActivity::class.java)
+            startActivity(intent)
         }
         img_food.setOnClickListener {
             Toast.makeText(this, "Hi there! This is Food category", Toast.LENGTH_SHORT).show()
